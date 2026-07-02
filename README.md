@@ -2,6 +2,7 @@
 
 A modern, full-stack weather application that provides real-time weather information and a 5-day weather forecast for any city around the globe. The project features a robust Python backend built with FastAPI and a clean, responsive, glassmorphic user interface built with vanilla HTML, CSS, and JavaScript.
 
+![Weather App Screenshot](frontend/screenshot.png)
 ---
 
 ## 📁 Project Structure
