@@ -1,0 +1,131 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.search input:focus {
+  outline: 2px solid var(--accent);
+}
+
+.search button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search button:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.current-weather {
+  margin-bottom: 2rem;
+}
+
+.current-weather .temp {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.current-weather .description {
+  text-transform: capitalize;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.current-weather .details {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.forecast-grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.forecast-card {
+  flex: 0 0 120px;
+  padding: 1rem;
+}
+
+.forecast-card .date {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-card .muted {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.error {
+  text-align: center;
+  color: #f87171;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
